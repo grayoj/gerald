@@ -10,7 +10,7 @@ type ExitBannerProviderProps = {
 export const EditBannerProvider: React.FC<ExitBannerProviderProps> = ({
   children,
 }) => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(true); 
 
   return (
     <ExitBannerContext.Provider value={{ isOpen, setIsOpen }}>

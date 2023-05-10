@@ -11,5 +11,3 @@ export const ExitBannerContext = React.createContext<ExitBannerContextProps>({
  isOpen: false,
  setIsOpen: () => { },
 });
-
-

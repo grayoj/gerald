@@ -13,7 +13,7 @@ const Banner: React.FC = () => {
   return (
     <div>
       {isOpen && (
-        <div className='hover:bg-gray-900  hover:color-gray-50  transition duration-500 border-1 border border-gray-900 relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-800 px-6 py-2.5 sm:px-3.5 sm:before:flex-1'>
+        <div className='hover:bg-gray-900  hover:color-gray-50  transition duration-500 border-1 border border-gray-900 relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-900 px-6 py-2.5 sm:px-3.5 sm:before:flex-1'>
           <div
             className='absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl'
             aria-hidden='true'

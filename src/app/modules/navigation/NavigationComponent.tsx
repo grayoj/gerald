@@ -3,10 +3,12 @@
 import React from 'react';
 import { Popover } from '@headlessui/react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { ChevronRightIcon, Bars3Icon } from '@heroicons/react/20/solid';
 import { NavButton, PopoverButton } from './NavbarStyles';
 
 const NavigationComponent: React.FC<{}> = () => {
+  const pathname = usePathname();
   return (
     <div className='bg-white shadow-md sticky z-50 border-gray-900 border border-1'>
       <div className='flex justify-between items-center px-4 py-4 sm:px-6 md:justify-start md:space-x-10 '>
@@ -22,19 +24,19 @@ const NavigationComponent: React.FC<{}> = () => {
         </div>
         <Popover.Group as='nav' className='hidden md:flex space-x-10'>
           <Link
-            href='/'
+            href='./'
             className='hover:pb-1 hover:border-b-2 hover:border-gray-900 hover-duration-500 hover:transition text-base font-medium text-black hover:text-gray-900 hover:duration-500'
           >
             Home
           </Link>
           <Link
-            href='/'
+            href='./about'
             className='hover:pb-1 hover:border-b-2 hover:border-gray-900 hover-duration-500 hover:transition text-base font-medium text-black hover:text-gray-900 hover:duration-500'
           >
             About
           </Link>
           <Link
-            href='/'
+            href='./experience'
             className='hover:pb-1 hover:border-b-2 hover:border-gray-900 hover-duration-500 hover:transition text-base font-medium text-black hover:text-gray-900 hover:duration-500'
           >
             Experience
